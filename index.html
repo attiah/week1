@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="themes/fingerprint.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <script src="cordova.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+<!--  home page -->
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Student Attended</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+   <fieldset class="ui-grid-c" style="text-align:center;">
+
+
+                <div class="ui-block-a">
+                 <a href="#login"> <img alt="" src="icon/login.jpg" style="width: 50px; height: 50px" /></a>
+                 <a href="#login" style=" text-decoration:none; color:green"><h4>Login </h4> </a>
+                  
+                </div>
+                <div class="ui-block-b">
+                    <a href="#about"> <img alt="" src="icon/info.JPG" style="width: 40px; height: 40px" /></a>
+                    <a href="#about" style=" text-decoration:none;"><h4>About US</h4> </a>
+                </div>
+                 <div class="ui-block-c">
+                    <a href="#contact" > <img alt="" src="icon/contactus.jpg" style="width: 40px; height: 40px" /></a>
+                    <a href="#contact" style=" text-decoration:none;"  ><h4>Contact US</h4> </a>
+                </div>
+                 
+            </fieldset>
+           
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div>
+
+
+<!-- login  -->
+
+<div data-role="page" id="login">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#home"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> User Login</h1>
+     <label for="tbname">User ID : </label>
+     <input type="text" id="tbname" />
+     <label for="tbname">Password : </label>
+     <input type="password" id="tbpass" />
+     <a  class="ui-btn " href="javascript:login()"> Login</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+
+<!-- About  -->
+
+<div data-role="page" id="about">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#home"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> About US</h1>
+     
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+
+
+
+<!-- About  -->
+
+<div data-role="page" id="contact">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#home"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> Contact US</h1>
+     
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+<!-- student page -->
+
+<div data-role="page" id="student">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> Student</h1>
+  </div>
+  <div>
+  <fieldset class="ui-grid-b" style="text-align:center;">
+  <div class="ui-block-a">
+  <a href="#tbl"> <img alt="" src="icon/info.jpg" style="width: 60px; height: 60px" /></a>
+  <a href="#tbl" style=" text-decoration:none; color:green"><h4>My Table </h4> </a>                
+  </div>
+
+  <div class="ui-block-b">
+  <a href="#lect"> <img alt="" src="icon/lecture.jpg"  style="width: 50px; height: 50px" /></a>
+  <a href="#lect" style=" text-decoration:none; color:Green"><h4>Lecture</h4> </a>
+  </div>
+
+  <div class="ui-block-c">
+  <a href="#home"> <img alt="" src="icon/logout.jpg" style="width: 50px; height: 50px" /></a>
+  <a href="#home" style=" text-decoration:none; color:green"><h4>logout </h4> </a>                
+  </div>
+
+  </fieldset>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+  </div>
+
+ 
+<!-- student table  -->
+
+<div data-role="page" id="tbl">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#student"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> My Course</h1>
+      <form class="ui-filterable" style="text-align:right">
+      <input  id="tbt"  data-type="search" class="ui-alt-icon"  placeholder="Input search text" >
+    </form>
+    <ul data-role="listview" id="ldatat" data-filter="true" style="margin:10px"  data-input="#tbt" data-autodividers="false" data-inset="false"> </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+
+<!-- student Lecture  -->
+
+<div data-role="page" id="lect">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#student"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+      <h1 style="text-align:center"> Current Lecture </h1>
+      <form class="ui-filterable" style="text-align:right">
+      <input  id="tbl"  data-type="search" class="ui-alt-icon"  placeholder="Input search text" >
+    </form>
+    <ul data-role="listview" id="ldatal" data-filter="true" style="margin:10px"  data-input="#tbl" data-autodividers="false" data-inset="false"> </ul>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+
+
+<!-- Image  -->
+
+<div data-role="page" id="cam">
+  <div data-role="header" data-position="fixed">
+    <h1 style="text-align: center">Student Attended</h1>
+    <a href="#home"  class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+     
+     <a  class="ui-btn" href="javascript:capturePhoto()"> Take Image</a>
+     <img  class="picture" id="picture" src="" width="100%" height="400"  />
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h6>All right reserved</h6>
+  </div>
+</div> 
+
+
+</body>
+</html>
